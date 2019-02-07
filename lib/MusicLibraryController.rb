@@ -104,10 +104,11 @@ end
   end
 
 def play_song
-  list_songs
+#  list_songs
+ @songs.sort! {|a,b| a.name.downcase <=> b.name.downcase}
   input=""
   #while input!="exit"
-  puts "Please enter the name of a genre:"
+  puts "Which song number would you like to play?"
   input=gets.strip
 
   if input!=""
