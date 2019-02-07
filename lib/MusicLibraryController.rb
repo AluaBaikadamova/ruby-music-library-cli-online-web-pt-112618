@@ -110,9 +110,9 @@ def play_song
   #while input!="exit"
   puts "Which song number would you like to play?"
   input=gets.strip
-
-  if input!=""
-    num=input.to_i
+num=input.to_i
+  if (num>=1) && (num <@songs.length)
+    
 a=@songs[num]
   puts  "Playing #{a.name} by #{a.artist.name}"
 end
