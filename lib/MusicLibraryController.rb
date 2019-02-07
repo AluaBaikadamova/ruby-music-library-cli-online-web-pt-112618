@@ -112,7 +112,7 @@ def play_song
   input=gets.strip
 num=input.to_i
   if (num>=1) && (num <@songs.length)
-    
+
 a=@songs[num]
   puts  "Playing #{a.name} by #{a.artist.name}"
 end
