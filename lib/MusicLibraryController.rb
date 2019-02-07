@@ -144,7 +144,7 @@ when "list artist"
 when "list genre"
   list_songs_by_genre
 when "play song"
-  play song
+  play_song
 end
 end
 end
