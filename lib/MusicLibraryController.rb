@@ -113,7 +113,7 @@ def play_song
 num=input.to_i
   if (num>=1) && (num <@songs.length)
 
-a=@songs[num]
+a=@songs[num-1]
   puts  "Playing #{a.name} by #{a.artist.name}"
 end
 end
