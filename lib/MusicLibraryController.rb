@@ -103,6 +103,20 @@ end
   end
   end
 
+def play_song
+  list_songs
+  input=""
+  #while input!="exit"
+  puts "Please enter the name of a genre:"
+  input=gets.strip
+
+  if input!=""
+    num=input.to_i
+a=@songs[num]
+  puts  "Playing #{a.name} by #{a.artist.name}"
+end
+end
+
 def call
   input=""
   while input!="exit"
